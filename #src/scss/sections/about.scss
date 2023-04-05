@@ -1,0 +1,54 @@
+.about {
+    padding-top: 220px;
+    p {
+        font-size: 18px;
+    }
+    h1 {
+        font-size: 34px;
+        font-family: 'Belarus-Regular', sans-serif;
+    }
+    &__btn {
+        font-family: 'Belarus-Regular', sans-serif;
+        font-size: 27px;
+        color: #000000;
+        padding: 8px;
+        background-color: #9f9f9f;
+        position: relative;
+        display: inline-block;
+        margin-bottom: 40px;
+        span {
+            display: block;
+            border: 1px solid rgb(0, 0, 0);
+            border-radius: 2px;
+            padding: 10px 20px 10px 45px;
+        }
+        &:before {
+            content: url('../img/icon-5.png');
+            position: absolute;
+            top: 18px;
+            left: 30px;
+        }
+        &:after {
+            position: absolute;
+            bottom: -25px;
+            z-index: -1;
+            left: 0;
+            content: url('../img/bg-10.png');
+        }
+    }
+    &__btn2 {
+        span {
+            padding: 10px 55px 10px 55px;
+        }
+        &:before {
+            display: none;
+        }
+        &:after {
+            position: absolute;
+            bottom: -25px;
+            z-index: -1;
+            left: 0;
+            content: url('../img/bg-11.png');
+        }
+    }
+}

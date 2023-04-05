@@ -20,6 +20,7 @@ $fontFamily: 'Montserrat', sans-serif;
     overflow: hidden;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
 .container {
     max-width: $maxWidthContainer + px;
@@ -51,4 +52,6 @@ body.lock {
 
 @import './sections/header';
 @import './sections/intro';
+@import './sections/new-buildings';
+@import './sections/about';
 @import './sections/footer';
