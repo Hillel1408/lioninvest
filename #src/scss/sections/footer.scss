@@ -1,14 +1,35 @@
 .footer {
     padding: 33px 0 20px 0;
     background: #e3e3e3 url('../img/bg-4.png');
+    background-size: cover;
     &__container {
         display: flex;
         align-items: center;
         gap: 180px;
+        @media (max-width: 1570px) {
+            gap: 80px;
+        }
+        @media (max-width: 1300px) {
+            gap: 40px;
+        }
+        @media (max-width: 520px) {
+            flex-direction: column;
+        }
     }
     &__nav {
         display: flex;
         gap: 80px;
+        @media (max-width: 1300px) {
+            gap: 40px;
+        }
+        @media (max-width: 730px) {
+            gap: 20px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        @media (max-width: 420px) {
+            grid-template-columns: 1fr;
+        }
     }
     &__list {
         display: flex;

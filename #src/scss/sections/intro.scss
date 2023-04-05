@@ -20,6 +20,9 @@
         line-height: 100%;
         font-family: 'Belarus-Regular', sans-serif;
         color: white;
+        @media (max-width: 880px) {
+            font-size: 35px;
+        }
     }
     &__text {
         font-size: 16px;
@@ -43,6 +46,12 @@
         gap: 88px;
         align-items: center;
         justify-content: center;
+        @media (max-width: 970px) {
+            gap: 40px;
+        }
+        @media (max-width: 880px) {
+            flex-direction: column;
+        }
     }
     &__btn {
         font-family: 'Belarus-Regular', sans-serif;

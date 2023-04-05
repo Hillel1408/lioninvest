@@ -50,6 +50,7 @@
     }
     &__nav {
         display: flex;
+        flex-wrap: wrap;
         &-item {
             position: relative;
             cursor: pointer;
@@ -61,18 +62,19 @@
                 visibility: hidden;
                 position: absolute;
                 width: max-content;
-                background-color: rgba(65, 87, 72, 0.6);
+                background-color: rgba(65, 87, 72, 1);
                 padding: 25px 11px 15px 15px;
                 display: flex;
                 flex-direction: column;
                 gap: 13px;
                 left: 0;
+                z-index: 3;
                 li a {
                     color: white;
                 }
             }
             &:hover {
-                background-color: rgba(65, 87, 72, 0.6);
+                background-color: rgba(65, 87, 72, 1);
                 color: white;
                 ul {
                     opacity: 1;
