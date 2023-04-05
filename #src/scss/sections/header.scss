@@ -1,0 +1,70 @@
+.header {
+    padding-top: 67px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    &__container {
+        display: flex;
+        justify-content: flex-end;
+    }
+    &__block {
+        display: flex;
+        gap: 38px;
+        align-items: center;
+    }
+    &__tel {
+        font-family: 'Belarus-Regular', sans-serif;
+        font-size: 26px;
+        color: #000000;
+    }
+    &__btn {
+        font-family: 'Belarus-Regular', sans-serif;
+        font-size: 22px;
+        color: #000000;
+        padding: 4px;
+        background-color: #9f9f9f;
+        span {
+            display: block;
+            border: 1px solid rgb(0, 0, 0);
+            border-radius: 2px;
+            padding: 8px 22px 8px 22px;
+        }
+    }
+    &__logo {
+        width: 71px;
+    }
+    &__flex {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        justify-content: space-between;
+    }
+    &__nav {
+        display: flex;
+        gap: 29px;
+        &-item {
+            ul {
+                display: none;
+            }
+        }
+        &-link,
+        &-item {
+            font-family: 'Belarus-Regular', sans-serif;
+            font-size: 26px;
+            line-height: 26px;
+            color: #000000;
+        }
+    }
+    &__address {
+        font-size: 12px;
+        line-height: 12px;
+    }
+    &__buttons {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        button {
+            background-color: transparent;
+        }
+    }
+}
