@@ -3,6 +3,7 @@
     position: absolute;
     left: 0;
     right: 0;
+    z-index: 1;
     &__container {
         display: flex;
         justify-content: flex-end;
@@ -23,11 +24,19 @@
         color: #000000;
         padding: 4px;
         background-color: #9f9f9f;
+        position: relative;
         span {
             display: block;
             border: 1px solid rgb(0, 0, 0);
             border-radius: 2px;
-            padding: 8px 22px 8px 22px;
+            padding: 8px 24px 8px 24px;
+        }
+        &:after {
+            position: absolute;
+            bottom: -17px;
+            z-index: -1;
+            left: -2px;
+            content: url('../img/bg-5.png');
         }
     }
     &__logo {
@@ -41,10 +50,37 @@
     }
     &__nav {
         display: flex;
-        gap: 29px;
         &-item {
+            position: relative;
+            cursor: pointer;
+            padding: 9px 22px 0 16px;
+            transition: 0.2s;
             ul {
-                display: none;
+                transition: 0.2s;
+                opacity: 0;
+                visibility: hidden;
+                position: absolute;
+                width: max-content;
+                background-color: rgba(65, 87, 72, 0.6);
+                padding: 25px 11px 15px 15px;
+                display: flex;
+                flex-direction: column;
+                gap: 13px;
+                left: 0;
+                li a {
+                    color: white;
+                }
+            }
+            &:hover {
+                background-color: rgba(65, 87, 72, 0.6);
+                color: white;
+                ul {
+                    opacity: 1;
+                    visibility: visible;
+                }
+                & > .triangle {
+                    border-top: 6px solid white;
+                }
             }
         }
         &-link,
@@ -53,11 +89,24 @@
             font-size: 26px;
             line-height: 26px;
             color: #000000;
+            transition: 0.2s;
+            &:hover {
+                a {
+                    color: white;
+                }
+            }
         }
     }
     &__address {
         font-size: 12px;
         line-height: 12px;
+        color: white;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        &:before {
+            content: url('../img/icon-4.png');
+        }
     }
     &__buttons {
         display: flex;
@@ -67,4 +116,15 @@
             background-color: transparent;
         }
     }
+}
+.triangle {
+    transition: 0.2s;
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid black;
+    position: absolute;
+    right: 4px;
+    top: 50%;
 }

@@ -1,6 +1,67 @@
 .intro {
     height: 1109px;
-    background-image: url('../img/bg-1.png');
+    background: black url('../img/bg-1.png');
     background-size: cover;
     background-position: center;
+    position: relative;
+    &__wrapper {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+    &__block {
+        max-width: 1280px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    &__title {
+        font-size: 45px;
+        line-height: 100%;
+        font-family: 'Belarus-Regular', sans-serif;
+        color: white;
+    }
+    &__text {
+        font-size: 16px;
+        color: white;
+        line-height: 100%;
+        max-width: 910px;
+        margin: 0 auto;
+        text-align: center;
+        padding-bottom: 30px;
+        margin-top: 25px;
+    }
+    &__block2 {
+        padding: 54px 0;
+        background: url('../img/bg-2.png');
+        background-size: cover;
+        background-position: center;
+        position: relative;
+    }
+    &__flex {
+        display: flex;
+        gap: 88px;
+        align-items: center;
+        justify-content: center;
+    }
+    &__btn {
+        font-family: 'Belarus-Regular', sans-serif;
+        font-size: 27px;
+        color: #000000;
+        padding: 7px;
+        background-color: #7d7d7d;
+        position: relative;
+        span {
+            display: block;
+            border: 1px solid rgb(0, 0, 0);
+            border-radius: 2px;
+            padding: 12px 50px 12px 50px;
+        }
+        &:after {
+            position: absolute;
+            bottom: -29px;
+            left: -5px;
+            content: url('../img/bg-6.png');
+        }
+    }
 }
