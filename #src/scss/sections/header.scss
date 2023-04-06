@@ -175,7 +175,7 @@
         &-item {
             position: relative;
             cursor: pointer;
-            padding: 9px 22px 0 16px;
+            padding: 9px 22px 4px 16px;
             transition: 0.2s;
             @media (max-width: 850px) {
                 padding: 12px 22px 0 16px;
@@ -193,6 +193,7 @@
                 flex-direction: column;
                 gap: 13px;
                 left: 0;
+                top: 38.5px;
                 z-index: 3;
                 li a {
                     color: white;
